@@ -39,7 +39,7 @@ def graph(a,b,c):
     st.pyplot(fig)
         
 def get_latex(a,b,c):
-    return f'''$y = {a}x^2 {"+" if b >= 0 else ""}{b}x + {"+" if c >= 0 else ""}{c}$'''
+    return f'''$y = {a}x^2 {"+" if b >= 0 else ""}{b}x {"+" if c >= 0 else ""}{c}$'''
         
 def main():
     a = st.number_input(label="2차 항의 계수를 작성하시오")
