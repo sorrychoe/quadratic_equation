@@ -24,7 +24,7 @@ def func(a,b,c):
 def graph(a,b,c):
     x = np.array(range(-10, 11))
     
-    fomula = f'''{a}x^2 { "+" if b >= 0 else ""}{b}x + {"+" if c >= 0 else ""}{c}'''
+    fomula = f'''{a}x^2 { "+" if b >= 0 else ""}{b}x {"+" if c >= 0 else ""}{c}'''
     
     plt.figure(figsize=(10,10))
     
