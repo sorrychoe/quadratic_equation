@@ -8,6 +8,11 @@ st.title("2차 방정식 계산기")
 
 st.write("---")
 
+
+def space(num_lines):
+    for _ in range(num_lines):
+        st.write("")
+
 def func(a,b,c):
     D=b**2-4*a*c
     if D>0:
@@ -49,9 +54,12 @@ def main():
     if st.button("result"):
         func(a,b,c)
         
-        
+        space(1)
         
         st.markdown(f"{get_latex(a,b,c)}")
+        
+        space(1)
+        
         graph(a,b,c)
         
 if __name__ == '__main__':
