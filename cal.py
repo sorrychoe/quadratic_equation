@@ -39,6 +39,8 @@ def graph(a,b,c):
     ax.axvline(x=0, color = 'black')  # draw x =0 axes
     ax.axhline(y=0, color = 'black')   # draw y =0 axes
     
+    ax.set_ylim([-20, 20])
+    
     ax.plot(x, a*x**2+b*x+c, label = fomula)
     ax.legend()
     st.pyplot(fig)
