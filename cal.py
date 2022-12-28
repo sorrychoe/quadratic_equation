@@ -54,7 +54,7 @@ def main():
     if st.button("result"):
         func(a,b,c)
         
-        space(1)
+        space(2)
         
         st.markdown(f"{get_latex(a,b,c)}")
         
