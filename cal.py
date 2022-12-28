@@ -31,8 +31,8 @@ def graph(a,b,c):
     fig, ax = plt.subplots()
     ax.grid(color = "gray", alpha=.5, linestyle="--")
     
-    ax.axvline(x=0, color = 'r')  # draw x =0 axes
-    ax.axhline(y=0, color = 'r')   # draw y =0 axes
+    ax.axvline(x=0, color = 'black')  # draw x =0 axes
+    ax.axhline(y=0, color = 'black')   # draw y =0 axes
     
     ax.plot(x, a*x**2+b*x+c, label = fomula)
     ax.legend()
